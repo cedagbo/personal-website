@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris-Eric Dagbo</title>
+    <!-- Bootstrap CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./starter/css/style.css" />
+    <link rel=”stylesheet”
+    href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+  </head>
+
+  <body>
+    <!--Navigation-->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Chris-Eric Dagbo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#hero"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio"> Portfolio </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!--Jumbotron-->
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="hero"
+      style="background-image: url(./images/background.jpg)"
+    >
+      <div class="container section-1">
+        <h1 class="display-4">UX-Focused Web Developer</h1>
+        <p class="lead">Hi, I'm <span>Chris-Eric Dagbo</span> from France.</p>
+      </div>
+    </div>
+    <!--End Jumbotron-->
+    <!-- <hr /> -->
+
+    <!--About-->
+    <div id="about" cellspacing="1">
+      <div class="container">
+        <div class="row no-gutters" id="row">
+          <div class="about-col-1">
+            <img
+              width="400px"
+              src="./images/profile-pic.jpg"
+              alt="profile-photo"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1>About Me</h1>
+            <p>
+              Front-End Web Developer with a background in Finance and Investment Banking.
+            </p>
+            <p>
+              Effective at combining creativity and problem solving to develop user-friendly applications.
+            </p>
+            <!-- <p>
+              Possess
+              communication abilities to convey innovative ideas to diverse
+              audiences of varying technical expertise.
+            </p> -->
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>User Interface Design</span><br />Web Development</li>
+                <li><span>Design Thinking</span><br />Web Development</li>
+                <li><span>Problem Solving</span><br />Web Development</li>
+                <li><span>Teamwork</span><br />Web Development</li>
+                <li><span>Critical Thinking</span><br />Data Analysis</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>September 2021- June 2022</span><br />FX Trader / Analyst</li>
+                <li>
+                  <span>April 2021 - August 2021</span><br />Futures Trader Development
+                </li>
+                <li>
+                  <span>October 2020 - March 2021</span><br />Associate
+                </li>
+                <li>
+                  <span>June 2020 - September 2020</span><br />Trainee Investment Analyst
+                </li>
+                <li>
+                  <span>Novembre 2020 2021 - February 2020</span><br />Professional Trading Programme
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />Bootcamp in Front-end Web
+                  Development
+                </li>
+                <li>
+                  <span>2018 - 2019</span><br />MSc Finance (Financial Markets)
+                </li>
+                <li>
+                  <span>2017 - 2018</span><br />BA Business Administration
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <!--My Work-->
+    <div class="card-header" id="portfolio">
+      <div class="work-header">
+        <h1>My Work</h1>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/Weather-Dashboard_screenshot.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Weather Dashboard</h5>
+            <p class="card-text">
+              Creation of a web app that allows users to see the weather
+              forecast for cities of their choosing.
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a href="https://cedagbo.github.io/Weather-App/" style="color: #fff;">Learn more</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/work-day-scheduler.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Daily Planner App</h5>
+            <p class="card-text">
+              Creation of a simple calendar application that allows a user to
+              save events for each hour of the day..
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a href="https://cedagbo.github.io/Planner/" style="color: #fff;">Learn more</a>
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/password-generator-demo.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Password Generator</h5>
+            <p class="card-text">
+              Creation of a web app to enable a user to generate a random
+              password.
+            </p>
+            <button type="button" class="btn btn-secondary">
+              <a href="https://cedagbo.github.io/passgensite/" style="color: #fff;">Learn more</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn1 btn-lg">
+      <a href="https://github.com/cedagbo?tab=repositories">See more</a>
+    </button>
+    <hr style="border: solid" />
+
+    <!--Contact-->
+    <div id="contact" class="contact-me">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <img src="./images/send-icon.png" alt="" /> cdagbo@outlook.com
+            </p>
+            <p><img src="./images/phone-icon.png" alt="" />(+44) 07928334668</p>
+            <div class="social-icons">
+              <a href="https://www.twitter.com/ChrisDagbo"
+                ><img
+                  src="./images/twitter.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+              /></a>
+              <a href="https://www.linkedin.com/in/chris-eric-dagbo/"
+                ><img
+                  src="./images/linkedin.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+              /></a>
+              <a href="https://www.github.com/cedagbo/"
+                ><img
+                  src="./images/github.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+              /></a>
+            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form
+              action="mailto:cdagbo@outlook.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" value="Submit" class="btn btn2">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright @ Chris-Eric Dagbo</p>
+    </div>
+    <!--jQuery JavaScript-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./starter/js/script.js"></script>
+  </body>
+</html>
